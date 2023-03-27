@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOKEPON!!</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>MOKEPON!! 🔥💧🌱</h1>
+    <section class="seleccionar-mascota" id="seleccionar-mascota">
+      <h2>Elige tu mascota:</h2>
+
+      <input type="radio" name="mascota" id="hipodoge" value="0" />
+      <label for="hipodoge">Hipodoge -> Agua</label>
+
+      <input type="radio" name="mascota" id="capipepo" value="1" />
+      <label for="capipepo">Capipepo -> Tierra</label>
+
+      <input type="radio" name="mascota" id="ratigueya" value="2" />
+      <label for="ratigueya">Ratigûeya -> Fuego</label>
+
+      <input type="radio" name="mascota" id="langostelvis" value="3" checked />
+      <label for="langostelvis">Langostelvis -> Agua y Fuego</label>
+
+      <input type="radio" name="mascota" id="tucapalma" value="4" />
+      <label for="tucapalma">Tucapalma -> Agua y Tierra</label>
+
+      <input type="radio" name="mascota" id="pydos" value="5" />
+      <label for="pydos">Pydos -> Tierra y Fuego</label>
+      <br />
+      <button id="boton-mascota">seleccionar</button>
+    </section>
+    <section class="seleccionar-ataque" id="seleccionar-ataque">
+      <h2>Elige tu ataque:</h2>
+
+      <p>
+        Tu mascota
+        <span id="mascota-jugador">________</span>
+        tiene
+        <span id="vidas-jugador">___</span>
+        vidas
+      </p>
+      <p>
+        La mascota de tu enemigo
+        <span id="mascota-enemigo">________</span>
+        tiene
+        <span id="vidas-enemigo">___</span>
+        vidas
+      </p>
+
+      <p>
+        <button id="boton-fuego" value="0">Fuego 🔥</button>
+        <button id="boton-agua" value="1">Agua 💧</button>
+        <button id="boton-tierra" value="2" disabled>Tierra 🌱</button>
+      </p>
+    </section>
+    <section class="mensajes" id="ventana-mensajes">
+      <p id="parrafo"></p>
+    </section>
+
+    <section class="reiniciar" id="reinicio">
+      <button id="boton-reiniciar">reiniciar</button>
+    </section>
+  </body>
+</html>

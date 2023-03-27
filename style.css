@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/*-----------Fuentes de GoogleFonts---------*/
+
+/* --------------------Colores -------------- */
+:root {
+  /* primarios */
+  --DarkCyan: hsl(12, 66%, 63%);
+  --VeryDarkDesaturatedBlue: hsl(203, 15%, 44%);
+  --DarkGrayishBlue: hsl(227, 10%, 46%);
+  /* neutrales */
+  --DarkGray: hsl(0, 0%, 59%);
+}
+/*---------------principales---------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  /* fondo de la pagina */
+  background-color: var(--DarkCyan);
+  box-sizing: border-box;
+  text-align: center;
+}
+p {
+  margin: 10px;
+}
+input {
+  margin: 10px;
+}
+label {
+  font-weight: 700;
+}
+button {
+  background-color: var(--VeryDarkDesaturatedBlue);
+  border-radius: 5px;
+  height: 2em;
+}
+
+.seleccionar-mascota {
+  /* border: 1px red solid; */
+  margin: 10px 10vw;
+  /* display: none; */
+}
