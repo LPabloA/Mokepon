@@ -43,3 +43,10 @@ button {
   margin: 10px 10vw;
   /* display: none; */
 }
+#mascota-jugador {
+  font-weight: bold;
+}
+
+#mascota-enemigo {
+  font-weight: 600;
+}
