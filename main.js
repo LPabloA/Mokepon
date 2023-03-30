@@ -64,7 +64,7 @@ function seleccionarMascotaJugador() {
   spanVidasEnemigo.innerHTML = vidas[vidasEnemigo];
   // esconde y agrega secciones
   sectionSeleccionarMascota.style.display = "none";
-  sectionSeleccionarAtaque.style.display = "block";
+  sectionSeleccionarAtaque.style.display = "flex";
 }
 
 function ataquesDisponibles(mokepon) {

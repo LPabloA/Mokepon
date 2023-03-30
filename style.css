@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Russo+One&family=Titan+One&display=swap");
 /*-----------Fuentes de GoogleFonts---------*/
 
 /* --------------------Colores -------------- */
 :root {
   /* primarios */
-  --DarkCyan: hsl(12, 66%, 63%);
-  --VeryDarkDesaturatedBlue: hsl(203, 15%, 44%);
-  --DarkGrayishBlue: hsl(227, 10%, 46%);
+  --DarkCyan: #9d4edd;
+  --Texto: #1a090d;
+  --BotonesFondo: #ccc5b9;
   /* neutrales */
   --DarkGray: hsl(0, 0%, 59%);
 }
@@ -17,7 +17,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Russo One", sans-serif;
   font-size: 18px;
   /* fondo de la pagina */
   background-color: var(--DarkCyan);
@@ -29,10 +29,21 @@ p {
 }
 
 button {
-  background-color: var(--VeryDarkDesaturatedBlue);
+  background-color: var(--BotonesFondo);
   border-radius: 5px;
-  height: 2em;
+  height: 2.5em;
   width: 120px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+h1 {
+  /* background-color: bisque; */
+  font-family: "Titan One", cursive;
+  letter-spacing: 2px;
+  padding: 10px 30px;
+  color: var(--Texto);
 }
 
 /*---------------Area de selección---------------*/
@@ -44,11 +55,6 @@ button {
   justify-content: center;
   align-items: center;
   height: 90vh;
-}
-
-h1 {
-  /* background-color: bisque; */
-  padding: 10px 30px;
 }
 
 .mokepons {
@@ -65,21 +71,19 @@ h1 {
   /*labels de cada mokepon */
   border: 2px black solid;
   border-radius: 10%;
-  /* background-color: rgb(158, 157, 157); */
   background-image: linear-gradient(to bottom right, #b2a4ff, #ffb4b4, #ffdeb4);
-
-  /* height: 4em; */
-  width: auto;
   padding: 10px 5px;
-  /* margin: 0.5em; */
   font-weight: 700;
+  /* opciones del display: flex */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 input[type="radio"]:checked + label {
-  background-color: rgb(197, 124, 28);
+  /* background-color: rgb(197, 124, 28); */
+  background-image: linear-gradient(to bottom right, #0b2447, #a5d7e8);
 }
 input[type="radio"] {
   display: none;
@@ -88,12 +92,20 @@ input[type="radio"] {
 img {
   height: auto;
   width: 100px;
+  /* transform: scaleX(-1); */
 }
-/* .tucapalma-img {
-  width: 60px;
-  border-radius: 25%;
-} */
+
+.seleccionar-mascota button {
+  width: 160px;
+  height: 3em;
+}
+
 /*---------------Area de Pelea---------------*/
+#seleccionar-ataque {
+  flex-direction: column;
+  align-items: center;
+}
+
 #mascota-jugador {
   font-weight: bold;
 }

@@ -16,19 +16,19 @@
       <div class="mokepons">
         <input type="radio" name="mascota" id="hipodoge" value="0" />
         <label class="tarjeta-mokepon" for="hipodoge">
-          <img src="/programacion basica/Mokepon/Img/Hipodoge.png" alt="" />
+          <img src="/Mokepon/Img/Hipodoge.png" alt="" />
           <p>Hipodoge [💧]</p>
         </label>
 
         <input type="radio" name="mascota" id="capipepo" value="1" />
         <label class="tarjeta-mokepon" for="capipepo">
-          <img src="/programacion basica/Mokepon/Img/Capipepo.png" alt="" />
+          <img src="/Mokepon/Img/Capipepo.png" alt="" />
           <p>Capipepo [🌱]</p>
         </label>
 
         <input type="radio" name="mascota" id="ratigueya" value="2" />
         <label class="tarjeta-mokepon" for="ratigueya">
-          <img src="/programacion basica/Mokepon/Img/Ratigueya.png" alt="" />
+          <img src="/Mokepon/Img/Ratigueya.png" alt="" />
           <p>Ratigûeya [🔥]</p>
         </label>
 
@@ -40,7 +40,7 @@
           checked />
         <label class="tarjeta-mokepon" for="langostelvis">
           <img
-            src="/programacion basica/Mokepon/Img/Langostelvis.png"
+            src="/Mokepon/Img/Langostelvis.png"
             alt=""
             class="langostelvis-img" />
           <p>Langostelvis [🔥💧]</p>
@@ -48,52 +48,60 @@
 
         <input type="radio" name="mascota" id="tucapalma" value="4" />
         <label class="tarjeta-mokepon" for="tucapalma">
-          <img
-            src="/programacion basica/Mokepon/Img/Tucapalma.png"
-            alt=""
-            class="tucapalma-img" />
+          <img src="/Mokepon/Img/Tucapalma.png" alt="" class="tucapalma-img" />
           <p>Tucapalma [🌱💧]</p>
         </label>
 
         <input type="radio" name="mascota" id="pydos" value="5" />
         <label class="tarjeta-mokepon" for="pydos">
-          <img src="/programacion basica/Mokepon/Img/Pydos.png" alt="" />
+          <img src="/Mokepon/Img/Pydos.png" alt="" />
           Pydos [🌱🔥]
         </label>
       </div>
       <button id="boton-mascota">seleccionar</button>
     </section>
+
     <section class="seleccionar-ataque" id="seleccionar-ataque">
       <h1>MOKEPON!! 🔥💧🌱</h1>
+
       <h2>Elige tu ataque:</h2>
 
-      <p>
-        Tu mascota
-        <span id="mascota-jugador">________</span>
-        tiene
-        <span id="vidas-jugador">___</span>
-        vidas
-      </p>
-      <p>
-        La mascota de tu enemigo
-        <span id="mascota-enemigo">________</span>
-        tiene
-        <span id="vidas-enemigo">___</span>
-        vidas
-      </p>
+      <div>
+        <button class="boton-ataque" id="boton-fuego" value="0">
+          Fuego 🔥
+        </button>
+        <button class="boton-ataque" id="boton-agua" value="1">Agua 💧</button>
+        <button class="boton-ataque" id="boton-tierra" value="2" disabled>
+          Tierra 🌱
+        </button>
+      </div>
 
-      <p>
-        <button id="boton-fuego" value="0">Fuego 🔥</button>
-        <button id="boton-agua" value="1">Agua 💧</button>
-        <button id="boton-tierra" value="2" disabled>Tierra 🌱</button>
-      </p>
-    </section>
-    <section class="mensajes" id="ventana-mensajes">
-      <p id="parrafo"></p>
-    </section>
+      <div>
+        <section class="mensajes" id="ventana-mensajes">
+          <p id="parrafo"></p>
+        </section>
 
-    <section class="reiniciar" id="reinicio">
-      <button id="boton-reiniciar">reiniciar</button>
+        <section class="reiniciar" id="reinicio">
+          <button id="boton-reiniciar">reiniciar</button>
+        </section>
+      </div>
+
+      <div>
+        <p>
+          Tu mascota
+          <span id="mascota-jugador">________</span>
+          tiene
+          <span id="vidas-jugador">___</span>
+          vidas
+        </p>
+        <p>
+          La mascota de tu enemigo
+          <span id="mascota-enemigo">________</span>
+          tiene
+          <span id="vidas-enemigo">___</span>
+          vidas
+        </p>
+      </div>
     </section>
   </body>
 </html>
