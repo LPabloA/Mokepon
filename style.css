@@ -12,8 +12,6 @@
 }
 /*---------------principales---------------------*/
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 body {
@@ -22,6 +20,8 @@ body {
   /* fondo de la pagina */
   background-color: var(--DarkCyan);
   text-align: center;
+  padding: 20px 10px 10px 10px;
+  margin: auto;
 }
 
 p {
@@ -31,8 +31,8 @@ p {
 button {
   background-color: var(--BotonesFondo);
   border-radius: 5px;
-  height: 2.5em;
-  width: 120px;
+  height: 40px;
+  width: 110px;
   font-family: "Press Start 2P", cursive;
   font-size: 0.7em;
   font-weight: bold;
@@ -44,6 +44,7 @@ h1 {
   letter-spacing: 2px;
   padding: 10px 30px;
   color: var(--Texto);
+  margin-top: auto;
 }
 
 /*---------------Area de selección---------------*/
@@ -54,7 +55,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
 }
 
 .mokepons {
@@ -97,7 +97,8 @@ img {
 
 #seleccionar-mascota button {
   width: 160px;
-  height: 3em;
+  height: 40px;
+  padding: 10px;
 }
 
 /*---------------Area de Pelea---------------*/
@@ -105,6 +106,11 @@ img {
   display: none;
   flex-direction: column;
   align-items: center;
+}
+
+.botones-ataque {
+  display: flex;
+  gap: 10px;
 }
 
 #mascota-jugador {
@@ -127,13 +133,17 @@ img {
 #reinicio {
   display: none;
 }
+#reinicio button {
+  width: auto;
+}
 
 .estado-jugadores {
   display: grid;
   grid-template-columns: 50% 50%;
   column-gap: 30px;
+  width: 99%;
 }
 
-.estado-jugadores span {
-  margin: 50px;
+.estado-jugadores p {
+  width: 120px;
 }
