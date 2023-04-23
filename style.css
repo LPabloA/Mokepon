@@ -47,7 +47,7 @@ h1 {
 }
 
 /*---------------Area de selección---------------*/
-.seleccionar-mascota {
+#seleccionar-mascota {
   /* border: 1px red solid; */
   margin: 10px 10vw;
   display: flex;
@@ -95,13 +95,14 @@ img {
   /* transform: scaleX(-1); */
 }
 
-.seleccionar-mascota button {
+#seleccionar-mascota button {
   width: 160px;
   height: 3em;
 }
 
 /*---------------Area de Pelea---------------*/
 #seleccionar-ataque {
+  display: none;
   flex-direction: column;
   align-items: center;
 }
@@ -112,4 +113,27 @@ img {
 
 #mascota-enemigo {
   font-weight: 600;
+}
+
+#ventana-mensajes {
+  width: 280px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ff9100;
+  display: none;
+}
+
+#reinicio {
+  display: none;
+}
+
+.estado-jugadores {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 30px;
+}
+
+.estado-jugadores span {
+  margin: 50px;
 }

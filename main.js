@@ -16,7 +16,7 @@ let botonReiniciar = document.getElementById("boton-reiniciar");
 // secciones
 let sectionSeleccionarMascota = document.getElementById("seleccionar-mascota");
 let sectionSeleccionarAtaque = document.getElementById("seleccionar-ataque");
-let sectionMensajes = document.getElementById("ventana-mensajes");
+let divMensajes = document.getElementById("ventana-mensajes");
 let sectionReinicio = document.getElementById("reinicio");
 // variables globales
 let ataqueJugador;
@@ -34,7 +34,7 @@ const mokepons = [
   ["Langostelvis", 1, 1, 0],
   ["Tucapalma", 0, 1, 1],
   ["Pydos", 1, 0, 1],
-];
+]; /* 0 son ataques no disponibles, y 1 son disponibles */
 // 0=fuego 1=agua 2=tierra
 const ataques = ["Fuego 🔥", "Agua 💧", "Tierra 🌱"];
 
@@ -107,8 +107,9 @@ function combate(value) {
 
 function mensajePelea(i) {
   // Crear el elemento p y asignarle un texto
+  divMensajes.style.display = "flex";
   var parrafo = document.getElementById("parrafo");
-  parrafo.textContent = `tu mascota atacó con ${ataques[ataqueJugador]}, la mascota enemiga atacó con ${ataques[ataqueEnemigo]}, ${i}`;
+  parrafo.innerHTML = `${i}<br> Atacas con ${ataques[ataqueJugador]} y tu enemiga ataca con ${ataques[ataqueEnemigo]}`;
 }
 
 function conteoVidas() {
@@ -141,6 +142,3 @@ botonTierra.addEventListener("click", function () {
 });
 // reiniciar juego
 botonReiniciar.addEventListener("click", reiniciarJuego);
-// esconder las secciones
-sectionSeleccionarAtaque.style.display = "none";
-sectionReinicio.style.display = "none";
